@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/navgraph_friends"
+    app:startDestination="@id/friendsScreen1">
+
+    <fragment
+        android:id="@+id/friendsScreen1"
+        android:name="com.rohyme.navigation.homecontainer.friendsScreen.FriendsScreen1"
+        android:label="FriendsScreen1">
+        <action
+            android:id="@+id/action_friendsScreen1_to_friendsScreen2"
+            app:destination="@id/friendsScreen2" />
+        <deepLink
+            android:id="@+id/deepLink3"
+            app:uri="https://www.technivanceDemo.com/friends1" />
+    </fragment>
+    <fragment
+        android:id="@+id/friendsScreen2"
+        android:name="com.rohyme.navigation.homecontainer.friendsScreen.FriendsScreen2"
+        android:label="FriendsScreen2" >
+        <action
+            android:id="@+id/action_friendsScreen2_to_friendsScreen3"
+            app:destination="@id/friendsScreen3" />
+    </fragment>
+    <fragment
+        android:id="@+id/friendsScreen3"
+        android:name="com.rohyme.navigation.homecontainer.friendsScreen.FriendsScreen3"
+        android:label="FriendsScreen3">
+        <action
+            android:id="@+id/action_friendsScreen3_to_friendsScreen4"
+            app:destination="@id/friendsScreen4" />
+        <deepLink
+            android:id="@+id/deepLink"
+            app:uri="https://www.technivanceDemo.com/friends3" />
+    </fragment>
+    <fragment
+        android:id="@+id/friendsScreen4"
+        android:name="com.rohyme.navigation.homecontainer.friendsScreen.FriendsScreen4"
+        android:label="FriendsScreen4">
+        <action
+            android:id="@+id/action_friendsScreen4_to_friendsScreen5"
+            app:destination="@id/friendsScreen5" />
+        <deepLink
+            android:id="@+id/deepLink2"
+            app:uri="https://www.technivanceDemo.com/friends4" />
+    </fragment>
+    <fragment
+        android:id="@+id/friendsScreen5"
+        android:name="com.rohyme.navigation.homecontainer.friendsScreen.FriendsScreen5"
+        android:label="FriendsScreen5" />
+</navigation>

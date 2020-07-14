@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/navgraph_star"
+    app:startDestination="@id/starScreen1">
+
+    <fragment
+        android:id="@+id/starScreen1"
+        android:name="com.rohyme.navigation.homecontainer.starScreen.StarScreen1"
+        android:label="StarScreen1" >
+        <action
+            android:id="@+id/action_starScreen1_to_starScreen2"
+            app:destination="@id/starScreen2" />
+    </fragment>
+    <fragment
+        android:id="@+id/starScreen2"
+        android:name="com.rohyme.navigation.homecontainer.starScreen.StarScreen2"
+        android:label="StarScreen2" >
+        <action
+            android:id="@+id/action_starScreen2_to_starScreen3"
+            app:destination="@id/starScreen3" />
+    </fragment>
+    <fragment
+        android:id="@+id/starScreen3"
+        android:name="com.rohyme.navigation.homecontainer.starScreen.StarScreen3"
+        android:label="StarScreen3" >
+        <action
+            android:id="@+id/action_starScreen3_to_starScreen4"
+            app:destination="@id/starScreen4" />
+    </fragment>
+    <fragment
+        android:id="@+id/starScreen4"
+        android:name="com.rohyme.navigation.homecontainer.starScreen.StarScreen4"
+        android:label="StarScreen4" >
+        <action
+            android:id="@+id/action_starScreen4_to_starScreen5"
+            app:destination="@id/starScreen5" />
+    </fragment>
+    <fragment
+        android:id="@+id/starScreen5"
+        android:name="com.rohyme.navigation.homecontainer.starScreen.StarScreen5"
+        android:label="StarScreen5">
+        <deepLink
+            android:id="@+id/deepLink7"
+            app:uri="https://www.q84sale.com/index.php/public/kuwait/en/categories/listings/{parentCategory}/{catTitle}" />
+        <argument
+            android:name="parentCategory"
+            app:argType="integer"
+            android:defaultValue="-1" />
+        <argument
+            android:name="catTitle"
+            app:argType="string"
+            android:defaultValue="NONE" />
+
+    </fragment>
+</navigation>

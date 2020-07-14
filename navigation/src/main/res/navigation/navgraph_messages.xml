@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/navgraph_messages"
+    app:startDestination="@id/messageScreen1">
+
+    <fragment
+        android:id="@+id/messageScreen1"
+        android:name="com.rohyme.navigation.homecontainer.messageScreen.MessageScreen1"
+        android:label="MessageScreen1" >
+        <action
+            android:id="@+id/action_messageScreen1_to_messageScreen2"
+            app:destination="@id/messageScreen2" />
+    </fragment>
+    <fragment
+        android:id="@+id/messageScreen2"
+        android:name="com.rohyme.navigation.homecontainer.messageScreen.MessageScreen2"
+        android:label="MessageScreen2" >
+        <action
+            android:id="@+id/action_messageScreen2_to_messageScreen3"
+            app:destination="@id/messageScreen3" />
+    </fragment>
+    <fragment
+        android:id="@+id/messageScreen3"
+        android:name="com.rohyme.navigation.homecontainer.messageScreen.MessageScreen3"
+        android:label="MessageScreen3" >
+        <action
+            android:id="@+id/action_messageScreen3_to_messageScreen4"
+            app:destination="@id/messageScreen4" />
+    </fragment>
+    <fragment
+        android:id="@+id/messageScreen4"
+        android:name="com.rohyme.navigation.homecontainer.messageScreen.MessageScreen4"
+        android:label="MessageScreen4">
+        <action
+            android:id="@+id/action_messageScreen4_to_messageScreen5"
+            app:destination="@id/messageScreen5" />
+        <deepLink
+            android:id="@+id/deepLink5"
+            app:uri="https://www.technivanceDemo.com/messages4" />
+    </fragment>
+    <fragment
+        android:id="@+id/messageScreen5"
+        android:name="com.rohyme.navigation.homecontainer.messageScreen.MessageScreen5"
+        android:label="MessageScreen5" />
+</navigation>

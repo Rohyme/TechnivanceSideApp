@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/navgraph_home"
+    app:startDestination="@id/homeScreen1">
+
+    <fragment
+        android:id="@+id/homeScreen1"
+        android:name="com.rohyme.navigation.homecontainer.homeScreen.HomeScreen1"
+        android:label="HomeScreen1" >
+        <action
+            android:id="@+id/action_homeScreen1_to_homeScreen2"
+            app:destination="@id/homeScreen2" />
+    </fragment>
+    <fragment
+        android:id="@+id/homeScreen2"
+        android:name="com.rohyme.navigation.homecontainer.homeScreen.HomeScreen2"
+        android:label="HomeScreen2" >
+        <action
+            android:id="@+id/action_homeScreen2_to_homeScreen3"
+            app:destination="@id/homeScreen3" />
+    </fragment>
+    <fragment
+        android:id="@+id/homeScreen3"
+        android:name="com.rohyme.navigation.homecontainer.homeScreen.HomeScreen3"
+        android:label="HomeScreen3">
+        <action
+            android:id="@+id/action_homeScreen3_to_homeScreen4"
+            app:destination="@id/homeScreen4" />
+        <deepLink
+            android:id="@+id/deepLink4"
+            app:uri="https://www.technivanceDemo.com/home3" />
+    </fragment>
+    <fragment
+        android:id="@+id/homeScreen4"
+        android:name="com.rohyme.navigation.homecontainer.homeScreen.HomeScreen4"
+        android:label="HomeScreen4" >
+        <action
+            android:id="@+id/action_homeScreen4_to_homeScreen52"
+            app:destination="@id/homeScreen52" />
+    </fragment>
+    <fragment
+        android:id="@+id/homeScreen52"
+        android:name="com.rohyme.navigation.homecontainer.homeScreen.HomeScreen5"
+        android:label="HomeScreen5" />
+</navigation>

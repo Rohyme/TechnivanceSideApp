@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/navgraph_add_friend"
+    app:startDestination="@id/addFriendsScreen1">
+
+    <fragment
+        android:id="@+id/addFriendsScreen1"
+        android:name="com.rohyme.navigation.homecontainer.addFriendScreen.AddFriendsScreen1"
+        android:label="AddFriendsScreen1" >
+        <action
+            android:id="@+id/action_addFriendsScreen1_to_addFriendsScreen2"
+            app:destination="@id/addFriendsScreen2" />
+    </fragment>
+    <fragment
+        android:id="@+id/addFriendsScreen2"
+        android:name="com.rohyme.navigation.homecontainer.addFriendScreen.AddFriendsScreen2"
+        android:label="AddFriendsScreen2">
+        <action
+            android:id="@+id/action_addFriendsScreen2_to_addFriendsScreen3"
+            app:destination="@id/addFriendsScreen3" />
+        <deepLink
+            android:id="@+id/deepLink6"
+            app:uri="https://www.technivanceDemo.com/addfriend2" />
+    </fragment>
+    <fragment
+        android:id="@+id/addFriendsScreen3"
+        android:name="com.rohyme.navigation.homecontainer.addFriendScreen.AddFriendsScreen3"
+        android:label="AddFriendsScreen3" >
+        <action
+            android:id="@+id/action_addFriendsScreen3_to_addFriendsScreen4"
+            app:destination="@id/addFriendsScreen4" />
+    </fragment>
+    <fragment
+        android:id="@+id/addFriendsScreen4"
+        android:name="com.rohyme.navigation.homecontainer.addFriendScreen.AddFriendsScreen4"
+        android:label="AddFriendsScreen4" >
+        <action
+            android:id="@+id/action_addFriendsScreen4_to_addFriendsScreen5"
+            app:destination="@id/addFriendsScreen5" />
+    </fragment>
+    <fragment
+        android:id="@+id/addFriendsScreen5"
+        android:name="com.rohyme.navigation.homecontainer.addFriendScreen.AddFriendsScreen5"
+        android:label="AddFriendsScreen5" />
+</navigation>

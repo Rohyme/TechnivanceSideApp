@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navgraph_application_main_flow"
+    app:startDestination="@id/splashScreen2">
+    <fragment
+        android:id="@+id/splashScreen2"
+        android:name="com.rohyme.navigation.entranceScreens.SplashScreen"
+        android:label="fragment_splash"
+        tools:layout="@layout/fragment_splash" >
+        <action
+            android:id="@+id/action_splashScreen2_to_welcomeScreen2"
+            app:destination="@id/welcomeScreen2" />
+    </fragment>
+    <fragment
+        android:id="@+id/updateScreen2"
+        android:name="com.rohyme.navigation.entranceScreens.UpdateScreen"
+        android:label="fragment_update"
+        tools:layout="@layout/fragment_update" />
+    <fragment
+        android:id="@+id/welcomeScreen2"
+        android:name="com.rohyme.navigation.entranceScreens.WelcomeScreen"
+        android:label="fragment_welcome"
+        tools:layout="@layout/fragment_welcome" >
+        <action
+            android:id="@+id/action_welcomeScreen2_to_updateScreen2"
+            app:destination="@id/updateScreen2" />
+        <action
+            android:id="@+id/action_welcomeScreen2_to_homeScreen"
+            app:destination="@id/homeScreen" />
+    </fragment>
+    <activity
+        android:id="@+id/homeScreen"
+        android:name="com.rohyme.navigation.entranceScreens.HomeScreen"
+        android:label="HomeScreen">
+        <deepLink
+            android:id="@+id/deepLink8"
+            app:uri="https://www.technivanceDemo.com/star5" />
+        <deepLink
+            android:id="@+id/deepLink9"
+            app:uri="https://www.technivanceDemo.com/friends2" />
+        <deepLink
+            android:id="@+id/deepLink10"
+            app:uri="https://www.technivanceDemo.com/addfriend2" />
+    </activity>
+</navigation>
